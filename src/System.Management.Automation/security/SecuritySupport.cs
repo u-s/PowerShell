@@ -1694,7 +1694,7 @@ namespace System.Management.Automation
         [SuppressMessage("Microsoft.Reliability", "CA2006:UseSafeHandleToEncapsulateNativeResources")]
         private static IntPtr s_amsiSession = IntPtr.Zero;
 
-        private static bool s_amsiInitFailed = false;
+        internal static bool s_amsiInitFailed = false;
         private static object s_amsiLockObject = new Object();
 
         /// <summary>
